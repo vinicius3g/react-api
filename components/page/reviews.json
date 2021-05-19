@@ -2,7 +2,8 @@
   "collectionName": "components_page_reviews",
   "info": {
     "name": "reviews",
-    "icon": "star-half-alt"
+    "icon": "star-half-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -21,7 +22,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     }
   }
