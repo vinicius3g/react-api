@@ -2,11 +2,12 @@
   "collectionName": "components_page_social_links",
   "info": {
     "name": "socialLinks",
-    "icon": "network-wired"
+    "icon": "network-wired",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "socialLinks": {
+    "title": {
       "type": "enumeration",
       "enum": [
         "Github",
