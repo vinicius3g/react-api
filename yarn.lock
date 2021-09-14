@@ -3067,7 +3067,7 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-buffer@^5.1.0, buffer@^5.5.0:
+buffer@^5.1.0, buffer@^5.5.0, buffer@^5.6.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.7.1.tgz#ba62e7c13133053582197160851a8f648e99eed0"
   integrity sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==
@@ -4357,6 +4357,14 @@ draft-js@^0.11.5:
     fbjs "^2.0.0"
     immutable "~3.7.4"
     object-assign "^4.1.1"
+
+dropbox@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/dropbox/-/dropbox-5.2.1.tgz#ef2f40d2216bfd90381d033beddb6c13e27b6e56"
+  integrity sha512-B34kdU6X56DdN1wGjRSb30I9oXy4t33ssu+JLbc9wHZACgstRb8Jb2hzoCOtHv+ZCCgwQJ0fEztVcXJRGpHQnQ==
+  dependencies:
+    buffer "^5.6.0"
+    moment "^2.25.3"
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -7417,7 +7425,7 @@ moment-timezone@^0.5.21, moment-timezone@^0.5.31:
   dependencies:
     moment ">= 2.9.0"
 
-"moment@>= 2.9.0", moment@>=1.6.0, moment@^2.24.0, moment@^2.29.1:
+"moment@>= 2.9.0", moment@>=1.6.0, moment@^2.24.0, moment@^2.25.3, moment@^2.29.1:
   version "2.29.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
@@ -10543,6 +10551,14 @@ strapi-provider-email-sendmail@3.6.5:
   dependencies:
     sendmail "^1.6.1"
     strapi-utils "3.6.5"
+
+strapi-provider-upload-dropbox@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-dropbox/-/strapi-provider-upload-dropbox-1.0.2.tgz#e0311c83cb0d284f302a9a8ef1c742da36e2d3b7"
+  integrity sha512-Ts0B5HFuyll1VV310V5HJb00qckWASIt2N+c8TIL2v89NlFkbhOr2StsvdU5+ada5K1iJm9TGBQ5hM2hEvMsqg==
+  dependencies:
+    dropbox "^5.2.1"
+    node-fetch "^2.6.1"
 
 strapi-provider-upload-local@3.6.5:
   version "3.6.5"
